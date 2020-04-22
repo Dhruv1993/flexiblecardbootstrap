@@ -1,0 +1,92 @@
+
+.main {
+    padding: 10vmin 0;
+}
+
+.main .row .col-md-6 .food-right img {
+    position: absolute;
+    top: 15vmin;
+    left: -28vmin;
+    width: 150%;
+    opacity: 0.7;
+    border-radius: 0.2em;
+    -webkit-box-shadow: 2px 2px 34px -6px rgba(0, 0, 0, 0.66);
+    -moz-box-shadow: 2px 2px 34px -6px rgba(0, 0, 0, 0.66);
+    box-shadow: 2px 2px 34px -6px rgba(0, 0, 0, 0.66);
+    z-index: 1;
+}
+
+.main .row .col-md-6 .textpara-left {
+    position: relative;
+    -webkit-box-shadow: 2px 2px 34px -6px rgba(0, 0, 0, 0.66);
+    -moz-box-shadow: 2px 2px 34px -6px rgba(0, 0, 0, 0.66);
+    box-shadow: 2px 2px 34px -6px rgba(0, 0, 0, 0.66);
+    width: inherit;
+    padding: 100px 50px;
+    text-align: left;
+    border-radius: 3px;
+    background: white;
+    opacity: 0.7;
+    z-index: 10; 
+
+    /* // z index doesnt work on absolute */
+
+}
+
+.main .row .col-md-6:first-child{
+    position: relative;
+}
+
+.main .row .col-md-6 button{
+    background: white;
+    color: firebrick;
+    border-radius: black solid 3px;
+    border-color: black;
+}
+.main .row .col-md-6 .textpara h1{
+    font-weight: 900;
+}
+.main .row .col-md-6 .textpara p{
+    font-weight: 200;
+}
+.main .row .col-md-6 .textpara-left .line{
+    display: inline-block;
+    height: 6px;
+    width: 108px;
+    background: firebrick;
+}
+
+@media only screen and (max-width:768px) {
+    .main .row .col-md-6 .food-right img {
+        position: initial;
+        width: initial;
+        height: initial;
+        width: 100%;
+
+    }
+    .main .row .col-md-6 .textpara-left{
+        
+    }
+    .main .row .d-flex{
+        order: 1;
+    }
+}
+
+/*  */
+/* }
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+    .main .row .col-md-6 .food img{
+        width: 120%;
+    }
+    .main .row .col-md-6 .textpara{
+    top: 55vmin;
+
+    }
+} */
+
+/*Main section* card left*/
